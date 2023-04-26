@@ -13,4 +13,10 @@ leaf.style.left = value * 1.5 + 'px';
 hill5.style.left = value * 1.5 + 'px';
 hill4.style.left = value * -1.5 + 'px';
 hill1.style.top = value * 1 + 'px';
+
+
+if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight) {
+    // Desactiva el desplazamiento al llegar al final de la página
+    window.removeEventListener('scroll');
+}
 });
